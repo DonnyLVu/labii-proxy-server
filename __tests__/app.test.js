@@ -31,7 +31,7 @@ describe('app routes', () => {
       return client.end(done);
     });
 
-    skip('returns animals', async () => {
+    test('returns animals', async () => {
 
       const expectation = [
         {
