@@ -21,6 +21,7 @@ function weatherMunged(weather) {
 }
 
 function yelpMunged(reviews) {
+
     return reviews.businesses.map(item => {
         return {
             name: item.name,
@@ -30,6 +31,7 @@ function yelpMunged(reviews) {
             url: item.url
         };
     }).slice(0, 20);
+
 }
 
 function trailsMunged(trails) {
